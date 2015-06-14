@@ -49,6 +49,9 @@ angular.module('starter.services', [])
         }
       }
       return null;
+    },
+    add: function(chat){
+      chats.push(chat);
     }
   };
 });

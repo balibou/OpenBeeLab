@@ -5,14 +5,21 @@
   The Friends service returns an array of friend data
 -->
 <ion-view view-title="{{chat.name}}">
-  <ion-content class="padding">
+  <ion-content>
     <!-- <img ng-src="{{chat.face}}" style="width: 64px; height: 64px"> -->
-    <p>
+    <!-- <p>
       {{chat.lastText}}
     </p>
     <p>Type: {{chat.type}}</p>
     <p>Poids de la ruche: {{chat.poid}} kg</p>
     <p>Poids d'une réhausse: {{chat.poid2}} kg</p>
-    <p>Nombre de réhausses: {{chat.nbr}}</p>
+    <p>Nombre de réhausses: {{chat.nbr}}</p> -->
+
+    <ul class="list">
+      <li class="item">Type: {{chat.type}}</li>
+      <li class="item">Poids de la ruche: {{chat.poid}}</li>
+      <li class="item">Poids d'une réhausse: {{chat.poid2}}</li>
+      <li class="item">Nombre de réhausses: {{chat.nbr}}</li>
+    </ul>
   </ion-content>
 </ion-view>
