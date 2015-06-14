@@ -9,7 +9,7 @@
 var localDB = new PouchDB("chat");
 var remoteDB = new PouchDB("https://emak.iriscouch.com:6984/obl_la_mine");
 
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'chart.js'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
