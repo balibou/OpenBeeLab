@@ -5,10 +5,20 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
+
+var localDB = new PouchDB("chat");
+var remoteDB = new PouchDB("https://emak.iriscouch.com:6984/obl_la_mine");
+
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
+    // Start syncing the local and remote DB
+    localDB.replicate.from(remoteDB, {
+      live: true,
+      //filter: '_view',
+      //view: 'beehouses/by_name'
+    });
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
     if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
