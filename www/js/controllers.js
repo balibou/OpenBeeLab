@@ -44,6 +44,15 @@ angular.module('starter.controllers', [])
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
   $scope.chat = Chats.get($stateParams.chatId);
+
+  $scope.labels = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin"];
+  $scope.series = ['Poids de la ruche'];
+  $scope.data = [
+    [34, 38, 40, 37, 41, 39, 44]
+  ];
+  $scope.onClick = function (points, evt) {
+    console.log(points, evt);
+  };
 })
 
 .controller('AccountCtrl', function($scope) {

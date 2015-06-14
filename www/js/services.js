@@ -17,22 +17,38 @@ angular.module('starter.services', [])
     id: 1,
     name: 'Ruche #2',
     lastText: 'Enterprise',
-    face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
+    face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460',
+    type: 'dadant',
+    poid: 37,
+    poid2: 5,
+    nbr:1
   },{
     id: 2,
     name: 'Ruche #3',
     lastText: 'X-Wing',
-    face: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+    face: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg',
+    type: 'dadant',
+    poid: 37,
+    poid2: 5,
+    nbr:1
   }, {
     id: 3,
     name: 'Ruche #4',
     lastText: 'Concorde',
-    face: 'https://pbs.twimg.com/profile_images/598205061232103424/3j5HUXMY.png'
+    face: 'https://pbs.twimg.com/profile_images/598205061232103424/3j5HUXMY.png',
+    type: 'dadant',
+    poid: 37,
+    poid2: 5,
+    nbr:1
   }, {
     id: 4,
     name: 'Ruche #5',
     lastText: 'Rafale',
-    face: 'https://pbs.twimg.com/profile_images/578237281384841216/R3ae1n61.png'
+    face: 'https://pbs.twimg.com/profile_images/578237281384841216/R3ae1n61.png',
+    type: 'dadant',
+    poid: 37,
+    poid2: 5,
+    nbr:1
   }];
 
   return {

@@ -15,10 +15,17 @@
     <p>Poids d'une réhausse: {{chat.poid2}} kg</p>
     <p>Nombre de réhausses: {{chat.nbr}}</p> -->
 
+    <div class="padding">
+      <canvas id="line" class="chart chart-line" data="data"
+      labels="labels" legend="true" series="series"
+      click="onClick">
+      </canvas>
+    </div>
+
     <ul class="list">
       <li class="item">Type: {{chat.type}}</li>
-      <li class="item">Poids de la ruche: {{chat.poid}}</li>
-      <li class="item">Poids d'une réhausse: {{chat.poid2}}</li>
+      <li class="item">Poids de la ruche: {{chat.poid}} kg</li>
+      <li class="item">Poids d'une réhausse: {{chat.poid2}} kg</li>
       <li class="item">Nombre de réhausses: {{chat.nbr}}</li>
     </ul>
   </ion-content>
